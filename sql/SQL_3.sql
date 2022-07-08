@@ -1,0 +1,1 @@
+SELECT name, COUNT(sale) as sale_count, sum(price) as sale_rank FROM people p left JOIN sales s on p.id=s.people_id GROUP BY people_id ORDER BY sale_count DESC
